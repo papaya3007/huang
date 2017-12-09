@@ -1,0 +1,32 @@
+    今天主要先写
+        管理员用户的登陆与登出
+                   对菜品的添加删除更改
+
+        对密码使用md加密
+
+
+    数据库主要关系到3张表分别实现
+
+       管理员表
+            id
+            adminName
+            password（加密）
+       ---
+       菜品表
+            id
+            dishName
+            dishPrice
+            dishType(关联菜品类型表)
+       ------
+       菜品类型表
+           id
+           dishType
+       ---------------------------------
+
+
+------------
+pojo mapper dao
+使用mybatisgenerator 自动生成
+使用注解式sql语句
+
+---------------
